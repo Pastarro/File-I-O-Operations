@@ -1,0 +1,14 @@
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        string text = "This is a test.\nC# file handling is powerful!";
+        File.WriteAllText("example.txt", text);
+
+        string readText = File.ReadAllText("example.txt");
+        Console.WriteLine(readText);
+    }
+}
